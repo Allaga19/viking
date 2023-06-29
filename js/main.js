@@ -11,6 +11,11 @@ $(function(){
 	// 	// 	color: 'f00' 
 	// 	// } 
 	// });
+
+	// === menu ===
+	$('.menu__btn').on('click', function() {
+		$('.menu__list').toggleClass('menu__list--active')
+	});
 	
 	// slider
 	$('.heroes__slider-img').slick({

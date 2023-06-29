@@ -1,7 +1,9 @@
 @import 'fonts.css';
+
 * {
 	box-sizing: border-box;
 }
+
 body {
 	position: relative;
 	background-color: #0e0e0e;
@@ -11,13 +13,16 @@ body {
 	font-size: 18px;
 	line-height: 21px;
 }
+
 a {
 	color: inherit;
 	text-decoration: none;
 }
+
 ul {
 	list-style: none;
 }
+
 .marathon {
 	position: absolute;
 	top: 0;
@@ -36,28 +41,35 @@ ul {
 	/* border: 1px solid #fff; */
 	/* width: 100px; */
 }
+
 .marathon:hover .marathon__video {
 	opacity: 1;
 }
+
 .marathon__title {
 	font-size: 20px;
 }
+
 .marathon__video {
 	padding: 5px;
 	opacity: 0;
 }
+
 .marathon__video:hover {
 	background-color: #fff;
 	color: #000;
 }
+
 .container {
 	max-width: 1230px;
 	padding: 0 15px;
 	margin: 0 auto;
 }
+
 .section-page {
 	padding: 100px 0;
 }
+
 .title {
 	text-align: center;
 	margin-bottom: 100px;
@@ -65,6 +77,7 @@ ul {
 	line-height: 42px;
 	font-weight: 400;
 }
+
 .header {
 	background-image: url('../images/header-bg.jpg');
 	height: 100vh;
@@ -74,6 +87,7 @@ ul {
 	text-align: center;
 	position: relative;
 }
+
 .header::after {
 	content: '';
 	position: absolute;
@@ -84,26 +98,36 @@ ul {
 	background: linear-gradient(180deg, #0E0E0E 0%, rgba(17, 17, 17, 0.850295) 16.53%, rgba(32, 31, 33, 0) 100%);
 	transform: rotate(180deg);
 }
+
 .menu {
 	padding: 50px 0 58px;
 	background: linear-gradient(180deg, #111213 0%, #111213 43.62%, rgba(32, 31, 33, 0) 86.33%);
 }
+
+.menu__btn {
+	display: none;
+}
+
 .menu__list {
 	display: flex;
 	justify-content: center;
 }
+
 .menu__list-item {
 	padding: 0 13px;
 }
+
 .menu__list-link {
 	font-size: 36px;
 	line-height: 42px;
 }
+
 .menu__list-link:hover,
 .menu__list-link--active {
 	color: #85ccdc;
 	text-decoration: underline;
 }
+
 .logo {
 	padding-top: 178px;
 }
@@ -113,18 +137,22 @@ ul {
 .about__inner {
 	display: flex;
 }
+
 .about__info {
 	width: 375px;
 	flex: none;
 	margin-right: 50px;
 }
+
 .about__info-item {
 	margin-bottom: 25px;
 	color: #e5e5e5;
 }
+
 .about__info-item span {
 	display: block;
 }
+
 .about__text p {
 	margin-bottom: 25px;
 }
@@ -138,25 +166,29 @@ ul {
 	background-position: center center;
 	text-align: right;
 }
+
 .video__text {
 	font-style: italic;
 	font-weight: 300;
 	font-size: 72px;
 	line-height: 84px;
-	color:#85ccdc;
+	color: #85ccdc;
 	padding-top: 45vh;
 	margin-bottom: 35px;
 }
+
 .video__text span {
 	display: block;
 	padding-right: 285px;
 }
+
 .video__btn {
 	/* display: block; */
 	padding-left: 112px;
 	position: relative;
 	margin-right: 230px;
 }
+
 .video__btn::before {
 	content: '';
 	position: absolute;
@@ -169,16 +201,20 @@ ul {
 	background-size: cover;
 	background-position: center center;
 }
+
 /* ========== Inner 0:10 ======== */
 .seasons {}
+
 .seasons__inner {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(284px, 1fr)); 
+	grid-template-columns: repeat(auto-fill, minmax(284px, 1fr));
 	/* grid-template-columns: 1fr 1fr 1fr; */
 	grid-gap: 100px 75px;
-	counter-reset: number;  /* для цифр 20:14 */
+	counter-reset: number;
+	/* для цифр 20:14 */
 	padding-top: 50px;
 }
+
 .seasons__item {
 	/* width: 350px; */
 	height: 250px;
@@ -191,9 +227,10 @@ ul {
 	justify-content: center;
 	align-items: center;
 }
+
 /* для цифр счетчик 21:10 */
 .seasons__item::before {
-	content: '0' counter(number);
+	content: '0'counter(number);
 	counter-increment: number;
 	position: absolute;
 	font-weight: bold;
@@ -204,23 +241,26 @@ ul {
 	top: -72px;
 	z-index: -1;
 }
+
 .seasons__item:nth-child(n+10)::before {
 	content: counter(number);
 }
-/*</ для цифр счетчик 21:10 > */
 
+/*</ для цифр счетчик 21:10 > */
 .seasons__item:hover::after {
-	content:'';
+	content: '';
 	position: absolute;
 	left: 0;
 	top: 0;
 	right: 0;
 	bottom: 0;
-	background:  rgba(14, 14, 14, 0.8);
+	background: rgba(14, 14, 14, 0.8);
 }
+
 .seasons__item:hover .seasons__link {
 	opacity: 1;
 }
+
 .seasons__link {
 	font-size: 36px;
 	line-height: 42px;
@@ -230,22 +270,28 @@ ul {
 	transition: all 2s;
 	z-index: 2;
 }
+
 /* ======= heroes 02:08 ======= */
 
 .heroes {}
+
 .heroes__inner {
 	display: flex;
 	justify-content: space-between;
 }
+
 .heroes__slider-img {
 	max-width: 775px;
 }
+
 .heroes__slider-text {
 	max-width: 350px;
 }
+
 .heroes__text p {
 	margin-bottom: 15px;
 }
+
 .heroes__name {
 	font-style: italic;
 	font-weight: 300;
@@ -254,45 +300,54 @@ ul {
 	color: #85ccdc;
 	margin-bottom: 44px;
 }
+
 .slick-btn {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 	border: none;
-	background-color:transparent;
+	background-color: transparent;
 	z-index: 10;
 	cursor: pointer;
 	outline: none;
 }
+
 .slick-prev {
 	left: 38px;
 }
+
 .slick-next {
 	right: 38px;
 }
+
 /*======== Footer ====*/
 .copy {
 	padding: 14px 0 15px;
 	text-align: center;
 }
+
 /* =================== 1 Season-1 =========== */
 .page-header {
 	background-image: url('../images/season-1bg.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-	height: 90vh;    /* Это 85% экрана  */
+	height: 90vh;
+	/* Это 85% экрана  */
 	position: relative;
 }
+
 .menu__container {
-	width: 1385px;
+	max-width: 1385px;
 	margin: 0 auto;
 	position: relative;
 }
+
 .page-logo {
 	position: absolute;
 	left: 0;
 }
+
 .season-info {
 	position: absolute;
 	max-width: 1385px;
@@ -304,6 +359,7 @@ ul {
 	right: 0;
 	margin: 0 auto;
 }
+
 .season-info__num {
 	font-weight: bold;
 	font-size: 96px;
@@ -311,93 +367,129 @@ ul {
 	text-align: center;
 	margin-right: 51px;
 }
+
 .season-info__num span {
 	display: block;
 	font-size: 36px;
 	line-height: 42px;
 }
-.season_info__text p {
+
+.season-info__text p {
 	margin-bottom: 15px;
 }
 
 /* ===================== start media ======================= */
-@media (max-width: 1366px){
+@media (max-width: 1420px) {
+	.page-logo {
+		left: 10px;
+		top: -6px;
+	}
+}
+
+@media (max-width: 1366px) {
 	.marathon {
 		max-width: 130px;
 		font-size: 10px;
 		line-height: 11px;
 		padding: 5px;
 	}
+
 	.logo__img {
 		width: 50%;
 	}
+
 	.menu__list-link {
 		font-size: 24px;
 		line-height: 32px;
 	}
+
 	.about__info {
 		width: 250px;
 	}
+
+	.page-header {
+		height: 120vh;
+	}
 }
-@media (max-width: 1200px){
+
+@media (max-width: 1200px) {
 	.heroes__inner {
 		display: block;
 	}
+
 	.heroes__slider-text {
 		max-width: 100%;
 		padding-top: 50px;
 	}
+
 	.heroes__slider-img {
 		max-width: 100%;
 	}
 }
 
-@media (max-width:1088px){
+@media (max-width:1088px) {
 	.seasons__item {
 		height: 340px;
 	}
 }
-@media (max-width: 768px){
+
+@media (max-width: 992px) {
+	.page-logo {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
 	body {
 		font-size: 16px;
 		line-height: 20px;
 	}
+
 	.about__inner {
 		display: block;
 	}
+
 	.section-page {
 		padding: 50px 0;
 	}
+
 	.title {
 		margin-bottom: 50px;
 		font-size: 28px;
 		line-height: 36px;
 	}
+
 	.video__text {
 		font-size: 48px;
 		line-height: 56px;
 	}
+
 	.video__text span {
 		padding-right: 200px;
 	}
+
 	.video__btn {
 		margin-right: 0;
 		padding-top: 62px;
 	}
+
 	.video__btn::before {
 		width: 50px;
 		height: 50px;
 		background-size: cover;
 		top: 47px;
 	}
+
 	.seasons__inner {
 		grid-gap: 80px 35px;
 	}
-		.heroes__name {
-			font-size: 46px;
-			line-height: 56px;
-			margin-bottom: 25px;
-		}
+
+	.heroes__name {
+		font-size: 46px;
+		line-height: 56px;
+		margin-bottom: 25px;
+	}
+
 	/* .slick-btn {
 		display: none;
 	} */
@@ -407,36 +499,125 @@ ul {
 		gap: 10px;
 		margin-top: 15px;
 	}
+
 	.slick-dots button {
 		border-radius: 50%;
 		/* width: 10px;
 		height: 10px; */
 		background-color: #85ccdc;
 	}
+
 	.slick-active button {
 		background-color: red;
 	}
+
+	.season-info {
+		display: block;
+		padding: 30px 10px 0 10px;
+	}
+
+	.season-info__num {
+		text-align: left;
+		font-size: 50px;
+		line-height: 26px;
+		margin-bottom: 15px;
+	}
+
+	.season-info__num span {
+		font-size: 25px;
+		line-height: 32px;
+	}
 }
-@media (max-width: 640px){
+
+@media (max-width: 640px) {
+	.menu {
+		padding: 0;
+		background: linear-gradient(180deg, #111213 0%, #111213 10%, rgba(32, 31, 33, 0) 86.33%);
+		text-align: center;
+	}
+
+	.menu__btn {
+		display: block;
+		width: 50px;
+		height: 35px;
+		cursor: pointer;
+		position: absolute;
+		right: 10px;
+		top: 20px;
+		z-index: 100;
+		display: flex;
+		align-items: center;
+		background-color: transparent;
+		border: none;
+		padding: 0;
+	}
+	.menu__btn span {
+		background-color: #fff;
+		height: 3px;
+		width: 100%;
+	}
+	.menu__btn::after,
+	.menu__btn::before {
+		content: "";
+		background-color: #fff;
+		width: 100%;
+		height: 3px;
+		position: absolute;
+	}
+	.menu__btn::before {
+		top: 0;
+		left: 0;
+	}
+	.menu__btn::after {
+		bottom: 0;
+		left: 0;
+	}
 	.menu__list {
-		display: none;
+		display: block;
+		transform: translateY(-130%);
+		transition: all .3s;
+	}
+	.menu__list.menu__list--active {
+		transform: translateY(0%);
+		padding: 100px 0 50px;
+		background-color: rgb(1, 1, 1 .8);
+	}
+	.menu__list-link {
+		display: block;
+		padding: 10px 0;
 	}
 	.logo {
 		padding-top: 21vh;
+	}
+	.page-logo {
+		display: block;
+		z-index: 10;
+		left: 10px;
+		top: 22px;
+	}
+	.page-header {
+		height: 160vh;
 	}
 	.video__text {
 		font-size: 38px;
 		line-height: 40px;
 	}
+
 	.video__btn {
 		padding-left: 70px;
 	}
 }
-@media (max-width: 414px){
+
+@media (max-width: 414px) {
 	.seasons__item {
 		height: 203px;
 	}
+	.page-header {
+		height: 200vh;
+	}
 }
-	
+@media (max-width: 375px){
+}
+
 
 /* 01:25 */
